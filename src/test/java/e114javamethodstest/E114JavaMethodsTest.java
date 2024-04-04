@@ -1,6 +1,6 @@
-package e111javamethodstest;
+package e114javamethodstest;
 
-import org.example.e111.E111JavaMethods;
+import org.example.e114.E114JavaMethods;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import static org.junit.Assert.assertEquals;
 
-public class E111JavaMethodsTest {
+public class E114JavaMethodsTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -24,11 +24,11 @@ public class E111JavaMethodsTest {
     }
 
     @Test
-    public void testSyntaxMethodsOutput() {
-        String[] args = {}; // No arguments needed for this test
-        E111JavaMethods.main(args);
-        String expectedOutput = "Welcome to Syntax Technologies!" + System.lineSeparator() +
-                "Welcome Syntax Students!" + System.lineSeparator();
+    public void testArithmeticOperations() {
+        E114JavaMethods.main(new String[]{}); // No arguments are passed as it's not needed
+        String expectedOutput = "Addition 30 " + System.lineSeparator() +
+                "Multiplication 30 " + System.lineSeparator() +
+                "Subtraction 20 " + System.lineSeparator();
         assertEquals(expectedOutput, outContent.toString());
     }
 }
