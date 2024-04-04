@@ -30,6 +30,8 @@ public class E111JavaMethodsTest {
         String expectedOutput = "Welcome to Syntax Technologies!" + System.lineSeparator() +
                 "Welcome Syntax Students!" + System.lineSeparator();
         assertEquals(expectedOutput, outContent.toString());
+
     }
 }
+
 
